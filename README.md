@@ -1,2 +1,1 @@
-# FlorianeMG.github.io
-Projets de Floriane MG
+# Projets de Floriane MG

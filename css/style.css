@@ -24,10 +24,11 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  max-height:50vh;
 }
 
 section {
-  padding: 65px 0 80px;
+  padding: 55px 0 70px;
 }
 
 section .heading {
@@ -70,6 +71,26 @@ ul {
   list-style: none;
 }
 
+.button1 {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 18px 50px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in 0s;
+  background-color: transparent;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #0066ff;
+}
+
+
 /* MENU */
 .navbar {
   letter-spacing: 2px;
@@ -105,25 +126,7 @@ ul {
 
 #about .heading h1 {
   text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.button1 {
-  display: inline-block;
-  border: 1px solid white;
-  border-radius: 3px;
-  padding: 18px 50px;
-  margin-top: 20px;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.3s ease-in 0s;
-}
-
-.button1:hover {
-  background-color: white;
-  color: #0066ff;
+  margin-bottom: 15px;
 }
 
 /* SKILLS */
@@ -247,7 +250,7 @@ ul {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
-  min-height: 363px;
+  min-height: 393px; /*363*/
 }
 
 .education-block h5 {
@@ -325,4 +328,36 @@ footer span:hover {
 
 footer h5 {
   font-weight: normal;
+}
+
+/* CONTACT */
+.divider {
+  width:100px;
+  height: 2px;
+  background: #ffa500;
+  margin: 0 auto 20px;
+}
+#contact-form {
+  font-size: 20px;
+  color:#fff;
+  
+}
+.form-control {
+  height: 50px;
+  font-size: 18px;
+}
+#contact-form input[type=submit] {
+  margin: 40px auto 0px;
+  display: block;
+}
+.comments {
+  font-style: italic;
+  font-size: 18px;
+  height: 25px
+}
+#contact-form .thank-you {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 22px;
 }
