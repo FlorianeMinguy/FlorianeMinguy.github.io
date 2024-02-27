@@ -1,0 +1,5 @@
+﻿AuthType basic
+AuthName "Connexion à l'administration"
+AuthUserFile "/var/www/prestations-digitales.fr/htdocs/projets/site-burgers/admin/.htpasswd"
+AuthGroupFile /dev/null
+Require valid-user
