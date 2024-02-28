@@ -1,10 +1,15 @@
 /*------------------------------------------------------------------------------------- 
 GENERAL
 ------------------------------------------------------------------------------------- */
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 1em;
+  min-width: 400px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word; 
+  hyphens:auto; 
 }
 
 h1,
@@ -22,9 +27,9 @@ p {
 }
 
 img {
+  display: block;   
   max-width: 100%;
-  height: auto;
-  max-height:50vh;
+  height:auto;    
 }
 
 section {
@@ -120,8 +125,12 @@ ul {
 
 /* ABOUT */
 .profile-picture {
+  margin: 0 auto 30px;
   text-align: center;
-  margin: 0px auto 30px;
+}
+.profile-picture img {
+  display: inline-block;
+  max-height: 50vh;
 }
 
 #about .heading h1 {
@@ -136,7 +145,7 @@ ul {
 }
 
 #skills .progress:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #skills .progress-bar h5 {
@@ -241,16 +250,19 @@ ul {
 }
 
 /* EDUCATION */
+#education .row > *:not(:last-of-type) {
+  margin-bottom: 20px;
+}
 .education-block {
   width: 90%;
+  height: calc(100% - 20px);
   background: #ddd;
   border-radius: 10px;
   border: 2px solid #ccc;
-  padding: 20px;
-  text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding: 20px;
   min-height: 393px; /*363*/
+  text-align: center;
 }
 
 .education-block h5 {
@@ -259,7 +271,7 @@ ul {
   margin-bottom: 15px;
 }
 
-.education-block span {
+.education-block i {
   font-size: 2.2rem;
 }
 
@@ -281,6 +293,10 @@ ul {
 }
 
 /* PORTFOLIO */
+#portfolio .row > * {
+  margin-bottom: 20px;
+}
+
 #portfolio img {
   width: 100%;
   height: 100%;
@@ -293,13 +309,9 @@ ul {
   -webkit-filter: none;
 }
 
-#portfolio .col-md-4 {
-  margin-bottom: 20px;
-}
-
 /* RECOMMENDATIONS */
 .carousel-indicators {
-  bottom: 0px;
+  bottom: 0;
 }
 
 #myCarousel .carousel-item {
@@ -317,12 +329,12 @@ footer {
   text-align: center;
 }
 
-footer span {
+footer i {
   font-size: 1.5rem;
   line-height: 35px;
 }
 
-footer span:hover {
+footer i:hover {
   font-size: 1.8rem;
 }
 
@@ -347,7 +359,7 @@ footer h5 {
   font-size: 18px;
 }
 #contact-form input[type=submit] {
-  margin: 40px auto 0px;
+  margin: 40px auto 0;
   display: block;
 }
 .comments {
@@ -360,4 +372,14 @@ footer h5 {
   margin-top: 15px;
   font-weight: bold;
   font-size: 22px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* MEDIAQUERIES */
+/* -------------------------------------------------------------------------------------- */
+/* Smartphone - Tablette */
+@media (max-width: 991px) {
+  span {
+    display: none;
+  }
 }
