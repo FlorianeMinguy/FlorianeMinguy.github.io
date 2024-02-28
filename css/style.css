@@ -1,6 +1,10 @@
 /*------------------------------------------------------------------------------------- 
 GENERAL
 ------------------------------------------------------------------------------------- */
+:root {
+  --main-color: #0066ff;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 1em;
@@ -53,7 +57,7 @@ section .heading h2 {
 
 .bg-color {
   /* background-color: #d82c2e; */
-  background-color: #0066ff;
+  background-color: var(--main-color);
 }
 
 .bg-white {
@@ -65,7 +69,7 @@ section .heading h2 {
 .education-block h3,
 #myCarousel .carousel-item h3 {
   /* color: #d82c2e; */
-  color: #0066ff;
+  color: var(--main-color);
 }
 
 .white {
@@ -92,7 +96,7 @@ ul {
 
 .button1:hover {
   background-color: white;
-  color: #0066ff;
+  color: var(--main-color);
 }
 
 
@@ -116,7 +120,7 @@ ul {
 .nav-link.active,
 .nav-link:hover {
   background-color: white;
-  color: #0066ff !important;
+  color: var(--main-color) !important;
 }
 
 .navbar-toggler {
